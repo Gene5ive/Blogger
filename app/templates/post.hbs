@@ -14,3 +14,9 @@
 <div class="body">
   {{model.body}}
 </div>
+
+{{#each comment in post}}
+  {{post.comment}}
+{{/each}}
+
+{{render "new-comment"}}
