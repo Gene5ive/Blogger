@@ -3,7 +3,7 @@ import Ember from 'ember';
 var NewCommentController = {
   actions: {
     save: function() {
-      var comment = this.get('model');
+      var comment = this.get('model')
       comment.save();
 
       var controller = this;

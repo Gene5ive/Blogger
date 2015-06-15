@@ -15,8 +15,10 @@
   {{model.body}}
 </div>
 
-{{#each comment in post}}
+{{#each comment in model.comment}}
   {{post.comment}}
 {{/each}}
 
-{{render "new-comment"}}
+{{#link-to 'new-comment' model.comment}}Comment on this post!{{/link-to}}
+
+<!-- {{outlet "new-comment"}} -->
